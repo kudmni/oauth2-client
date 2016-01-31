@@ -6,7 +6,7 @@ use League\OAuth2\Client\Entity\User;
 
 class Facebook extends AbstractProvider
 {
-    public $scopes = array('offline_access', 'email');
+    public $scopes = array('public_profile', 'email');
     public $responseType = 'string';
 
     public function urlAuthorize()
